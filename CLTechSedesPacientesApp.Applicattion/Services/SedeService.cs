@@ -17,6 +17,7 @@ namespace CLTechSedesPacientesApp.Applicattion.Services
             _lab61SedesRepository = lab61SedesRepository;
         }
 
+
         public List<string> GetAllSedesEnterprise()
         {
             return null;

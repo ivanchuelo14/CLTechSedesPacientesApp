@@ -15,6 +15,8 @@ namespace CLTechSedesPacientesApp.Controllers
 
         public IActionResult Index()
         {
+
+
             return View();
         }
 
