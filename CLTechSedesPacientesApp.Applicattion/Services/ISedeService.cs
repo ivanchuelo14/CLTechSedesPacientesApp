@@ -8,7 +8,7 @@ namespace CLTechSedesPacientesApp.Applicattion.Services
 {
     public interface ISedeService
     {
-        public List<string> GetAllSedesEnterprise();
+        public List<string> GetAllSedesEnterprise(int keySede);
 
     }
 }

@@ -1,4 +1,7 @@
+using CLTechSedesPacientesApp.Applicattion.Services;
 using CLTechSedesPacientesApp.Data;
+using CLTechSedesPacientesApp.Data.Repository;
+using CLTechSedesPacientesApp.Infraestructure.Configuration;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +12,9 @@ builder.Services.AddDbContext<AplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionDataBase"));
 });
+
+builder.Services.AddScoped(typeof(IRespository<>), typeof(Repository<>));
+builder.Services.AddScoped<ISedeService, SedeService>();
 
 var app = builder.Build();
 

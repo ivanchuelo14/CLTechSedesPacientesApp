@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -16,9 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CLTechSedesPacientesApp.Applicattion\CLTechSedesPacientesApp.Applicattion.csproj" />
-    <ProjectReference Include="..\CLTechSedesPacientesApp.Data\CLTechSedesPacientesApp.Data.csproj" />
-    <ProjectReference Include="..\CLTechSedesPacientesApp.Domain\CLTechSedesPacientesApp.Domain.csproj" />
-    <ProjectReference Include="..\CLTechSedesPacientesApp.Infraestructure\CLTechSedesPacientesApp.Infraestructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

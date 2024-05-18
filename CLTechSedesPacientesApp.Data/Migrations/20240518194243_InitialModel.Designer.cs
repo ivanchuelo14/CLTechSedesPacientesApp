@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CLTechSedesPacientesApp.Data.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20240517040840_Initial Model")]
+    [Migration("20240518194243_InitialModel")]
     partial class InitialModel
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace CLTechSedesPacientesApp.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CLTechSedesPacientesApp.Domain.Lab61Sedes", b =>
+            modelBuilder.Entity("CLTechSedesPacientesApp.Domain.Lab63Sedes", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -50,7 +50,7 @@ namespace CLTechSedesPacientesApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Lab61Sedes");
+                    b.ToTable("Lab63Sedes");
                 });
 #pragma warning restore 612, 618
         }

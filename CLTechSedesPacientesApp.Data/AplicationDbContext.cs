@@ -9,6 +9,8 @@ namespace CLTechSedesPacientesApp.Data
         {
         }
 
-        public DbSet<Lab61Sedes> Lab61Sedes { get; set; }
+        public DbSet<Lab63Sedes> Lab63Sedes { get; set; }
+
+        public DbSet<SpLab63Model> SpLab63Model { get; set; }
     }
 }

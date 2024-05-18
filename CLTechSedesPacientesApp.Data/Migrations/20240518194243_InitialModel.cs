@@ -12,7 +12,7 @@ namespace CLTechSedesPacientesApp.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Lab61Sedes",
+                name: "Lab63Sedes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -25,7 +25,7 @@ namespace CLTechSedesPacientesApp.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Lab61Sedes", x => x.Id);
+                    table.PrimaryKey("PK_Lab63Sedes", x => x.Id);
                 });
         }
 
@@ -33,7 +33,7 @@ namespace CLTechSedesPacientesApp.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Lab61Sedes");
+                name: "Lab63Sedes");
         }
     }
 }
