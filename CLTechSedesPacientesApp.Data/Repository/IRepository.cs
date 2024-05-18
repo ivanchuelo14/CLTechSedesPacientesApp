@@ -12,6 +12,7 @@ namespace CLTechSedesPacientesApp.Data.Repository
         T GetByIdM(int Id);
         IQueryable<T> GetAll();
         void Create(T entity);
+        void Create(IEnumerable<T> entity);
         void Update(T entity);
         void Delete(Guid Id);
     }

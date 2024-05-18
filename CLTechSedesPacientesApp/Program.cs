@@ -2,6 +2,7 @@ using CLTechSedesPacientesApp.Applicattion.Services;
 using CLTechSedesPacientesApp.Data;
 using CLTechSedesPacientesApp.Data.Repository;
 using CLTechSedesPacientesApp.Infraestructure.Configuration;
+using CLTechSedesPacientesApp.Infraestructure.Util;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<AplicationDbContext>(options =>
 
 builder.Services.AddScoped(typeof(IRespository<>), typeof(Repository<>));
 builder.Services.AddScoped<ISedeService, SedeService>();
+builder.Services.AddScoped<IValidationDictionary, CustomValidationDictionary>();
 
 var app = builder.Build();
 

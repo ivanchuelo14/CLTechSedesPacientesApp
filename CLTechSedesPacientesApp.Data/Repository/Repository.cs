@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,7 +42,19 @@ namespace CLTechSedesPacientesApp.Data.Repository
 
         public void Create(T entity)
         {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
+
             _DbContext.Set<T>().Add(entity);
+            _DbContext.SaveChanges();
+        }
+
+        public void Create(IEnumerable<T> entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
+
+            _DbContext.Set<T>().AddRange(entity);
             _DbContext.SaveChanges();
         }
 
@@ -58,6 +71,8 @@ namespace CLTechSedesPacientesApp.Data.Repository
 
         public void Update(T entity)
         {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
 
             _DbContext.Entry(entity).State = EntityState.Modified;
             _DbContext.SaveChanges();

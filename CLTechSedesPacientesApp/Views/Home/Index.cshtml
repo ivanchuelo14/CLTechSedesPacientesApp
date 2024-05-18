@@ -1,8 +1,70 @@
-﻿@{
+﻿@model SedeFilterViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h2>Lista de Sedes</h2>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Codigo Central</th>
+                        <th>Latitud</th>
+                        <th>Longitud</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    @if (Model.SedesViewModel != null && Model.SedesViewModel.Count > 0)
+                    {
+                        @foreach (var item in Model.SedesViewModel)
+                        {
+                            <tr>
+                                <td>@item.Nombre.ToString()</td>
+                                <td>@item.CodigoCentral.ToString()</td>
+                                <td>@item.Latitud.ToString()</td>
+                                <td>@item.Longitud.ToString()</td>
+                                <td class="text-center">
+                                    <div class="btn-group">
+                                        <a asp-action="Edit" asp-controller="Sede" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-warning">
+                                            <i class="fa fa-pencil-alt"></i> Editar
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3" class="text-center">
+                                No hay sedes activas actualmente en el LIS.
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        @if (!(Model.SedesViewModel != null && Model.SedesViewModel.Count > 0))
+        {
+            <div class="card-footer">
+                <a class="btn btn-primary" asp-action="New" asp-controller="Sede">Agregar Sede</a>
+                <a class="btn btn-secondary float-right" asp-action="Index" asp-controller="Home">Regresar</a>
+            </div>
+        }
+        else
+        {
+            <div class="card-footer">
+                <a class="btn btn-secondary float-right" asp-action="Index" asp-controller="Home">Regresar</a>
+            </div>
+        }
+
+    </div>
 </div>

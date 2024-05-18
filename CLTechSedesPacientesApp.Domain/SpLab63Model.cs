@@ -8,12 +8,11 @@ namespace CLTechSedesPacientesApp.Domain
 {
     public class SpLab63Model
     {
-        public Int32 Id { get; set; }
+        public Int16 Id { get; set; }
         public string Codigo { get; set; }
         public string CodigoCentral { get; set; }
-        public string NombreSede { get; set; }
-        public Int32 Estado { get; set; }        
+        public string NombreSede { get; set; }             
         public DateTime FechaRegistro { get; set; }
-        public Int32 IdDemo62 { get; set; }     
+        public int IdDemo62 { get; set; }     
     }
 }

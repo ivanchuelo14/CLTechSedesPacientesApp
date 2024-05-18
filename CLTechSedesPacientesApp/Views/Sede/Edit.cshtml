@@ -1,0 +1,40 @@
+﻿@model SedeViewModel
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h2>Actualizar Sede</h2>
+        </div>
+        <div class="card-body">
+            <form method="post" asp-action="Edit" asp-controller="Sede">
+                <input type="hidden" asp-for="Id">
+                <input type="hidden" asp-for="IdEnterprise">
+
+                <div class="form-group">
+                    <label for="apellido">Nombre:</label>
+                    <input type="text" asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre" required>
+                    <span asp-validation-for="Nombre"></span>
+                </div>
+                <div class="form-group">
+                    <label for="codigo">Codigo:</label>
+                    <input type="text" asp-for="Codigo" class="form-control" placeholder="Ingrese el codigo central" required>
+                    <span asp-validation-for="Codigo"></span>
+                </div>
+                <div class="form-group">
+                    <label for="latitud">Latitud:</label>
+                    <input type="text" asp-for="Latitud" class="form-control" placeholder="Ingrese la latitud" required>
+                    <span asp-validation-for="Latitud"></span>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Longitud:</label>
+                    <input type="text" asp-for="Longitud" class="form-control" placeholder="Ingrese la longitud" required>
+                    <span asp-validation-for="Longitud"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+            </form>
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-secondary float-right" asp-action="Index" asp-controller="Home">Regresar</a>
+        </div>
+    </div>
+</div>
