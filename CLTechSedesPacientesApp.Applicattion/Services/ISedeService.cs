@@ -12,6 +12,7 @@ namespace CLTechSedesPacientesApp.Applicattion.Services
         Lab63Sedes GetSedeById(int Id);
         public List<Lab63Sedes> GetSedesActivasEnterprise(int keySede);
         public List<Lab63Sedes> ValidateSedesEnterpriseNewTbl(List<Lab63Sedes> lab63Sedes);
+        public List<Lab63Sedes> GetAllSedes();
         bool GuardarSedes(List<Lab63Sedes> lab63Sedes);
 
     }

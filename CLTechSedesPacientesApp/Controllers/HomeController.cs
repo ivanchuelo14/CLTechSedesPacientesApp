@@ -42,6 +42,22 @@ namespace CLTechSedesPacientesApp.Controllers
                         Longitud = string.IsNullOrEmpty(x.Longitud) ? "" : x.Longitud
                     }).ToList();
                 }
+                else
+                {
+                    var sedesCreate = _sedeService.GetAllSedes();
+                    if (sedesCreate != null && sedesCreate.Count > 0)
+                    {
+                        model.SedesViewModel = sedesCreate.Select(x => new SedeFilterDetail
+                        {
+                            CodigoCentral = x.Codigo,
+                            Id = x.Id,
+                            Nombre = x.Nombre,
+                            Latitud = string.IsNullOrEmpty(x.Latitud) ? "" : x.Latitud,
+                            Longitud = string.IsNullOrEmpty(x.Longitud) ? "" : x.Longitud
+                        }).ToList();
+
+                    }
+                }
             }
             return View(model);
         }

@@ -102,6 +102,12 @@ namespace CLTechSedesPacientesApp.Applicattion.Services
             return sedesNow;
         }
 
+        public List<Lab63Sedes> GetAllSedes()
+        {
+            var sedesNow = _lab61SedesRepository.GetAll().ToList();
+            return sedesNow;
+        }
+
         public Lab63Sedes GetSedeById(int Id)
         {
             return _lab61SedesRepository.GetByIdM(Id);

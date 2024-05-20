@@ -40,6 +40,7 @@ namespace CLTechSedesPacientesApp.Controllers
                 var result = _sedeService.GuardarSedes(listSedes);
                 if (result)
                 {
+                    //TODO: Pendiente si toca agregar este demografico al LIS
                     TempData["AlertMessage"] = "Sede creada con éxito";
                     return RedirectToAction("Index", "Home");
                 }
@@ -86,8 +87,7 @@ namespace CLTechSedesPacientesApp.Controllers
                     var result = _sedeService.GuardarSedes(listSedes);
                     if (result)
                     {
-                        //Actualizar en LIS
-
+                        //TODO: Pendiente si toca agregar este demografico al LIS
                         TempData["AlertMessage"] = "Sede actualizada con éxito";
                         return RedirectToAction("Index", "Home");
                     }

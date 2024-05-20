@@ -1,9 +1,13 @@
 ﻿@model SedeViewModel
 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 <div class="container mt-4">
-    <div class="card">
-        <div class="card-header">
-            <h2>Actualizar Sede</h2>
+    <div class="card shadow">
+        <div class="card-header card-header-custom">
+            <h2 class="mb-0 textTableCustom">Actualizar Sede</h2>
         </div>
         <div class="card-body">
             <form method="post" asp-action="Edit" asp-controller="Sede">
@@ -11,30 +15,37 @@
                 <input type="hidden" asp-for="IdEnterprise">
 
                 <div class="form-group">
-                    <label for="apellido">Nombre:</label>
+                    <label for="nombre">Nombre:</label>
                     <input type="text" asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre" required>
-                    <span asp-validation-for="Nombre"></span>
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label for="codigo">Codigo:</label>
                     <input type="text" asp-for="Codigo" class="form-control" placeholder="Ingrese el codigo central" required>
-                    <span asp-validation-for="Codigo"></span>
+                    <span asp-validation-for="Codigo" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label for="latitud">Latitud:</label>
                     <input type="text" asp-for="Latitud" class="form-control" placeholder="Ingrese la latitud" required>
-                    <span asp-validation-for="Latitud"></span>
+                    <span asp-validation-for="Latitud" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label for="apellido">Longitud:</label>
+                    <label for="longitud">Longitud:</label>
                     <input type="text" asp-for="Longitud" class="form-control" placeholder="Ingrese la longitud" required>
-                    <span asp-validation-for="Longitud"></span>
+                    <span asp-validation-for="Longitud" class="text-danger"></span>
                 </div>
-                <button type="submit" class="btn btn-primary">Actualizar</button>
+
+                <div class="card-footer d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                    <a class="btn btn-secondary" asp-action="Index" asp-controller="Home">Regresar</a>
+                </div>
             </form>
-        </div>
-        <div class="card-footer">
-            <a class="btn btn-secondary float-right" asp-action="Index" asp-controller="Home">Regresar</a>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

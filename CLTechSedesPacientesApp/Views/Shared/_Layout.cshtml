@@ -3,17 +3,20 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CLTechSedesPacientesApp</title>
+    <title>Sedes Enterprise</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/styleGeneral.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CLTechSedesPacientesApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link rel="icon" type="image/png" href="~/images/favicon.png" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      @*   <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CLTechSedesPacientesApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -31,7 +34,31 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> *@
+        <table style="width: 100%; height: 70px;" border="0" cellspacing="0" cellpadding="0">
+            <tr class="hdrR1C1">
+                <td colspan="4" class="auto-style1">
+                    <img src="~/Images/banner/logo_70height.png" alt="Enterprise" style="height: 43px; width: 300px" />
+                </td>
+                <td colspan="7" class="auto-style1">
+                    <a class="hdrR1C4">Laboratory Information Management System </a>
+                </td>
+            </tr>
+            <tr>
+              @*   
+                <td class="hdrR2C1">
+                    &nbsp;
+                </td>
+                <td class="hdrR2C2">
+                    &nbsp;
+                </td>
+                <td class="hdrR2C3">
+                    &nbsp;
+                </td> *@
+                <td class="hdrR2C4" colspan="11">&nbsp;
+                </td>
+            </tr>
+        </table>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -40,10 +67,9 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - CLTechSedesPacientesApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+ 
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/sweetalert2.all.min.js"></script>
     <script>

@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Folder Include="AppData\Install\" />
+    <Folder Include="wwwroot\Images\Banner\" />
   </ItemGroup>
 
 </Project>

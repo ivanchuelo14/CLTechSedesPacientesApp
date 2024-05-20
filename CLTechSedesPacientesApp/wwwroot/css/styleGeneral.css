@@ -24,3 +24,253 @@
     display: flex;
     justify-content: center;
 }
+
+body {
+}
+
+.hdrR1C1 {
+    width: 21px;
+    height: 46px;
+    background-image: url(../Images/banner/00000001_r1_c1.jpg);
+    background-repeat: repeat-x;
+}
+
+.hdrR1C2 {
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Times New Roman;
+    font-size: 39px;
+    text-decoration: none;
+    left: 1px;
+    top: auto;
+    color: #ED1405; /*color: #CA462D;*/
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+.hdrR1C3 {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 19px;
+    text-decoration: none;
+    left: 1px;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 8px 4px 0 0;
+}
+
+.hdrR1C4 {
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 19px;
+    text-decoration: none;
+    left: 1px;
+    color: #6d6d6d !important;
+    top: 2px;
+    padding: 8px 20px 0 0;
+    float: right;
+}
+
+
+.hdrR2C1 {
+    width: 119px;
+    height: 24px;
+    background-image: url( '../Images/banner/00000001_r2_c1.jpg' );
+    background-repeat: repeat-x;
+}
+
+.hdrR2C2 {
+    height: 24px;
+    width: 21px;
+    background-image: url(../Images/banner/00000001_r2_c4.jpg);
+    background-repeat: no-repeat;
+}
+
+.hdrR2C3 {
+    height: 24px;
+    width: 72px;
+    background-image: url(../Images/banner/00000001_r2_c5.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.hdrR2C4 {
+    height: 24px;
+    background-image: url(../Images/banner/00000001_r2_c7.jpg);
+    background-repeat: repeat-x;
+}
+
+.hdrR2C5 {
+    height: 24px;
+    background-image: url(../Images/banner/00000001_r2_c16.jpg);
+    background-repeat: repeat-x;
+}
+
+.mnR2C7 {
+    height: 24px;
+    width: 18px;
+    background-image: url(../Images/banner/00000001_r2_c10.jpg);
+    background-repeat: repeat-x;
+}
+
+.mnR2C8 {
+    height: 24px;
+    width: 11px;
+    background-image: url(../Images/banner/00000001_r2_c11.jpg);
+    background-repeat: repeat-x;
+}
+
+.mnR2C9 {
+    height: 24px;
+    width: 262px;
+    background-image: url(../Images/banner/00000001_r2_c12.jpg);
+    background-repeat: repeat-x;
+}
+
+.mnR2C10 {
+    height: 24px;
+    width: 10px;
+    background-image: url(../Images/banner/00000001_r2_c14.jpg);
+    background-repeat: no-repeat;
+}
+
+.mnR2C11 {
+    height: 24px;
+    width: 4px;
+    background-image: url(../Images/banner/00000001_r2_c15.jpg);
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 10pt;
+    font-family: Tahoma;
+    text-align: center;
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+.menus {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: #005779;
+}
+
+.subtitulo2 {
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 12pt;
+    color: #206C9D;
+    font-weight: bold;
+}
+
+.userName {
+    color: Navy;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+.date {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: White;
+}
+
+.labelTitle {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 14px;
+    text-decoration: none;
+    left: 1px;
+    color: #ffffff;
+    padding: 5px 5px 0 0;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#headerleft {
+    float: left;
+}
+
+#drR1C2 {
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Times New Roman;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0;
+    color: #ED1405;
+}
+
+#headerexpand {
+    width: 100%;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+    background: url( "../Images/banner/00000001_r1_c1.jpg" ) 0 0 repeat-x;
+    text-align: right;
+}
+
+#drR1C3 {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 19px;
+    text-decoration: none;
+    left: 1px;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 8px 4px 0 0;
+}
+
+#drR1C4 {
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 19px;
+    text-decoration: none;
+    color: #6d6d6d;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#headerDer {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 19px;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 10px 10px 0 0;
+}
+
+.card-header-custom {
+    background-color: #4e81ad !important; 
+    color: white; 
+}
+
+.textTableCustom {
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 26px;
+    text-decoration: none;
+    left: 1px;
+    color: floralwhite !important;
+    top: 2px;
+    padding: 8px 20px 0 0;
+}
+
+.card-header-custom {
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center; 
+}
+
+.textTableCustom {
+    text-align: center; 
+}
+
+.table thead th, .table tbody td {
+    text-align: center; 
+    vertical-align: middle; 
+}
